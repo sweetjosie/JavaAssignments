@@ -29,13 +29,22 @@ class CafeUtil  {
         return pricesum;
     }
     public void displayMenu(ArrayList<String> menu){
-        // String menu =   menu.get(); // to access an element in an ArrayList using an index
-                for (int i = 0; i < menu.size(); i++){
-                     System.out.println( ""+ menu.get( i ) ); }
-               
+        // String menu =   menu.get(); // to access an element in an ArrayList using an index <-- doesnt like this
+                // for (int i = 0; i < menu.size(); i++){
+                //      System.out.println( ""+ menu.get( i ) ); } // it prints the items in the menu but not the index position
+            int index = 0;
+            for (String menuItems : menu){
+                    System.out.println((index++) +" "+ menuItems);
+            }
+        
+
         // System.out.println(menu);
     }
     
+    public addCustomer(ArrayList<String> customers){
+    System.out.println(" Please enter your name");
+    String userName = System.console().readLine();
 
+}
 
 } 
