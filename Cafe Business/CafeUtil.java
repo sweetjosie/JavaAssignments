@@ -4,6 +4,9 @@ import java.util.ArrayList;
 
 class CafeUtil  {
     public int getStreakGoal(){
+        //Cafe Java wants to implement a
+        // reward system for customers who always buy more drinks than they did the week before.
+        // i = coffees bought
         int weeksum= 0;
         for( int i = 0 ; i <= 10 ; i++){ 
           weeksum += i ;
