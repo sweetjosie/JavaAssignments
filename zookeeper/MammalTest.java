@@ -16,7 +16,8 @@ public class MammalTest {
         // be more perfect than a monstrous name for what was, in life, a cute flying
         // mammal."
 
-        Bat batNecromantis = new Bat();
+        Bat batNecromantis = new Bat(300);
+
         batNecromantis.attack();
         batNecromantis.attack();
         batNecromantis.attack();
@@ -24,6 +25,7 @@ public class MammalTest {
         batNecromantis.eatPeople();
         batNecromantis.fly();
         batNecromantis.fly();
+        batNecromantis.displayEnergy();
     }
 
 }
