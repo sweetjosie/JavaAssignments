@@ -1,12 +1,16 @@
 public class Mammal {
-    private int energyLevel = 100;
+    protected int energyLevel = 100;// suggested by the lightbulb
 
     public Mammal() {
     }
 
-    public void displayEnergy(int energyLevel) {
-        System.out.println("Your mammal's energy level is at" + energyLevel);
+    public Mammal(int energyLevel) {
+        this.energyLevel = energyLevel;
+    }
 
+    public int displayEnergy() {
+        System.out.println("Your mammal's energy level is at " + energyLevel);
+        return energyLevel;
     }
 
     public int getEnergyLevel() {

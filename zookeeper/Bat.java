@@ -8,28 +8,34 @@ public class Bat extends Mammal {
     // return energyLevel;
     // }
 
-    public int fly(int energyLevel) {
-
-        System.out.println("Woosh! What is that? Is it a bird? Is it a plane? No! It's a monster bat!");
-        if (energyLevel < 50) {
-            System.out.println("Can't Fly must eat more crunchy humans");
-        } else {
-            energyLevel -= 50;
-        }
-        return energyLevel;
+    public Bat() {
     }
 
-    public int eatPeople(int energyLevel) {
+    public Bat(int energyLevel) {
+        super(energyLevel);
+        energyLevel = 300;
+    }
+
+    public void fly() {
+
+        if (energyLevel < 50) {
+            System.out.println("Can't Fly must eat more crunchy humans!");
+        } else {
+            System.out.println("Woosh! What is that? Is it a bird? Is it a plane? No! It's a monster bat!");
+            energyLevel -= 50;
+        }
+
+    }
+
+    public void eatPeople() {
         energyLevel += 25;
         System.out.println("Crunch crunch crunch... Me needs moreee!!!");
 
-        return energyLevel;
     }
 
-    public int attack(int energyLevel) {
-        energyLevel -= 10;
-        System.out.println();
+    public void attack() {
+        energyLevel -= 100;
+        System.out.println("AAAAhhhh run for your lives!!!");
 
-        return energyLevel;
     }
 }
