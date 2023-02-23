@@ -2,14 +2,14 @@ public class MammalTest {
 
     public static void main(String[] args) {
 
-        // Gorilla gorilla = new Gorilla();
-        // gorilla.throwStuff();
-        // gorilla.throwStuff();
-        // gorilla.throwStuff();
-        // gorilla.eatBananas();
-        // gorilla.eatBananas();
-        // gorilla.climb();
-        // gorilla.displayEnergy();
+        Gorilla gorilla = new Gorilla();
+        gorilla.throwStuff();
+        gorilla.throwStuff();
+        gorilla.throwStuff();
+        gorilla.eatBananas();
+        gorilla.eatBananas();
+        gorilla.climb();
+        gorilla.displayEnergy();
 
         // "Few prehistoric animals can be as lucky as the bat Necromantis. It has just
         // such a wonderfully over-the-top name, literally 'death eater.' Nothing could

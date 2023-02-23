@@ -4,7 +4,7 @@ public class Bat extends Mammal {
     }
 
     public Bat(int energyLevel) {
-        super(energyLevel);
+        super(energyLevel);// super(300) solution way
 
     }
 
